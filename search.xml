@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>Matlab/Octave 学习笔记</title>
-      <link href="/2025/04/29/MATLAB-Octave-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-      <url>/2025/04/29/MATLAB-Octave-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      
-        <content type="html"><![CDATA[<p>现在主流的机器学习、人工智能的语言非 Python 莫属，但是在理解深度学习算法原理，比如梯度下降法、正规方程法等时， MATLAB 在矩阵计算、可视化等方面具有天然的优势。因此，本篇文章主要讲述 MATLAB 的基本使用方法，并运用于简单的机器学习算法之中。</p><hr><h3 id="运算符">运算符</h3><p>一些运算符（如加减乘除等）和主流编程语言（如 C++、Python ）基本一致，故省略。在这里介绍一些与主流编程语言不同的运算符：</p><ul><li><code>~=</code> 这类似于主流编程语言中的 <code>!=</code> ，如 <code>1~=2</code> 返回 true ，而 <code>1~=1</code> 返回 false ；</li><li><code>xor</code> 这类似于 <code>^</code> ，表示异或运算，如 <code>xor(1,0)</code> 返回 1。</li></ul><hr><h3 id="变量">变量</h3><p>MATLAB 和 Python 一样，定义变量时不需要声明数据类型。同时 MATLAB 和 Python 一样，也具有编译器和解释器。在 MATLAB 的解释器中输入 <code>a = 3</code> ，会输出 <code>a = 3</code> ，但假如在输入后加一个分号，如 <code>a = 3;</code> ，就不会输出，只执行赋值操作。</p><p>MATLAB 也有不同的数据类型，如整数、浮点数、字符串等，可以通过类似于 <code>a = 3</code>，<code>a = 3.14</code>，<code>a = 'hello world'</code> 的语句来定义不同数据类型的变量。<br><a href="https://imgse.com/i/pEH3ISO"><img src="https://s21.ax1x.com/2025/04/30/pEH3ISO.png" alt="pEH3ISO.png"></a></p><hr><h3 id="输入输出">输入输出</h3><p>MATLAB 中，输出的实现是 <code>disp</code> 命令，可以使用 <code>disp('hello world')</code> 来实现 MATLAB 的第一个程序，也可以使用 <code>disp(a)</code> 来输出变量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 。如果熟悉 C/C++ ，可以使用 <code>sprintf</code> 函数来生成格式化的字符串，如 <code>sprintf('a: %.2f',a)</code> ，将返回一个保留两位小数的，前面带有 a: 的格式化字符串，然后可以使用 <code>disp</code> 命令来输出：如 <code>disp(sprintf('a: %.2f',a))</code>。格式化的规则和 C/C++ 的规则一模一样。<br><a href="https://imgse.com/i/pEH34fK"><img src="https://s21.ax1x.com/2025/04/30/pEH34fK.png" alt="pEH34fK.png"></a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 学习笔记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>机器学习笔记（1）——监督学习</title>
       <link href="/2025/04/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/"/>
       <url>/2025/04/23/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
