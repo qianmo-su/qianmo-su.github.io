@@ -6,7 +6,7 @@
   <link href="https://qianmo-su.github.io/atom.xml" rel="self"/>
   
   <link href="https://qianmo-su.github.io/"/>
-  <updated>2025-04-29T16:06:15.838Z</updated>
+  <updated>2025-04-30T04:30:24.821Z</updated>
   <id>https://qianmo-su.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Matlab/Octave 学习笔记</title>
+    <link href="https://qianmo-su.github.io/2025/04/29/MATLAB-Octave-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://qianmo-su.github.io/2025/04/29/MATLAB-Octave-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2025-04-29T15:36:38.000Z</published>
+    <updated>2025-04-30T04:30:24.821Z</updated>
+    
+    <content type="html"><![CDATA[<p>现在主流的机器学习、人工智能的语言非 Python 莫属，但是在理解深度学习算法原理，比如梯度下降法、正规方程法等时， MATLAB 在矩阵计算、可视化等方面具有天然的优势。因此，本篇文章主要讲述 MATLAB 的基本使用方法，并运用于简单的机器学习算法之中。</p><hr><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>一些运算符（如加减乘除等）和主流编程语言（如 C++、Python ）基本一致，故省略。在这里介绍一些与主流编程语言不同的运算符：</p><ul><li><code>~=</code> 这类似于主流编程语言中的 <code>!=</code> ，如 <code>1~=2</code> 返回 true ，而 <code>1~=1</code> 返回 false ；</li><li><code>xor</code> 这类似于 <code>^</code> ，表示异或运算，如 <code>xor(1,0)</code> 返回 1。</li></ul><hr><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>MATLAB 和 Python 一样，定义变量时不需要声明数据类型。同时 MATLAB 和 Python 一样，也具有编译器和解释器。在 MATLAB 的解释器中输入 <code>a = 3</code> ，会输出 <code>a = 3</code> ，但假如在输入后加一个分号，如 <code>a = 3;</code> ，就不会输出，只执行赋值操作。</p><p>MATLAB 也有不同的数据类型，如整数、浮点数、字符串等，可以通过类似于 <code>a = 3</code>，<code>a = 3.14</code>，<code>a = &#39;hello world&#39;</code> 的语句来定义不同数据类型的变量。</p><h2 id=""><a href="#" class="headerlink" title=""></a><a href="https://imgse.com/i/pEH3ISO"><img src="https://s21.ax1x.com/2025/04/30/pEH3ISO.png" alt="pEH3ISO.png"></a></h2><h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><p>MATLAB 中，输出的实现是 <code>disp</code> 命令，可以使用 <code>disp(&#39;hello world&#39;)</code> 来实现 MATLAB 的第一个程序，也可以使用 <code>disp(a)</code> 来输出变量 $a$ 。如果熟悉 C/C++ ，可以使用 <code>sprintf</code> 函数来生成格式化的字符串，如 <code>sprintf(&#39;a: %.2f&#39;,a)</code> ，将返回一个保留两位小数的，前面带有 a: 的格式化字符串，然后可以使用 <code>disp</code> 命令来输出：如 <code>disp(sprintf(&#39;a: %.2f&#39;,a))</code>。格式化的规则和 C/C++ 的规则一模一样。</p><p><a href="https://imgse.com/i/pEH34fK"><img src="https://s21.ax1x.com/2025/04/30/pEH34fK.png" alt="pEH34fK.png"></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;现在主流的机器学习、人工智能的语言非 Python 莫属，但是在理解深度学习算法原理，比如梯度下降法、正规方程法等时， MATLAB 在矩阵计算、可视化等方面具有天然的优势。因此，本篇文章主要讲述 MATLAB 的基本使用方法，并运用于简单的机器学习算法之中。&lt;/p&gt;
+&lt;h</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://qianmo-su.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习笔记（1）——监督学习</title>
